@@ -3,9 +3,6 @@
   "version": "1.0.0",
   "description": "ACME JavaScript Test",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ag-digital/acme-supermarket-test.git"
@@ -19,5 +16,18 @@
   "bugs": {
     "url": "https://github.com/ag-digital/acme-supermarket-test/issues"
   },
-  "homepage": "https://github.com/ag-digital/acme-supermarket-test#readme"
+  "homepage": "https://github.com/ag-digital/acme-supermarket-test#readme",
+  "dependencies": {
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1"
+  },
+  "devDependencies": {
+    "react-scripts": "^1.1.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
 }
