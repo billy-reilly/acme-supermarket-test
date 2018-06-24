@@ -1,6 +1,27 @@
 # ACME Supermarket
 
-Create a solution for the ACME Supermarket problem.
+## Run locally
+
+To run the app locally:
+```
+# clone the repo
+git clone https://github.com/billy-reilly/acme-supermarket-test.git
+
+# navigate into the root directory
+cd acme-supermarket-test
+
+# start the development server
+npm start
+```
+
+## Run tests
+
+```
+npm test
+
+# or to run tests and see the coverage report
+npm test -- --coverage
+```
 
 ## Description of the problem
 
@@ -36,26 +57,3 @@ Test Data:
 
     Basket: SR1, SR1, FR1, SR1
     Total price expected: £16.61
-
-## Run locally
-
-To run the app locally:
-```
-# clone the repo
-git clone https://github.com/billy-reilly/acme-supermarket-test.git
-
-# navigate into the root directory
-cd acme-supermarket-test
-
-# start the development server
-npm start
-```
-
-## Run tests
-
-```
-npm test
-
-# or to run tests and see the coverage report
-npm test -- --coverage
-```
