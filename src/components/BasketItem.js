@@ -13,7 +13,7 @@ import QuantityInput from './QuantityInput';
 
 export default function BasketItem ({ product, basket, addProduct, removeProduct }) {
     const quantity = basket.productsAdded.get(product.code);
-    if (quantity < 1) { return null; }
+    if (!quantity || quantity < 1) { return null; }
     const discount = basket.getProductDiscount(product);
     return (
         <tr>

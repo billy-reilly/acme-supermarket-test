@@ -1,7 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import _ from 'lodash';
-import classnames from 'classnames';
 import Col from 'react-bootstrap/lib/Col';
 import Panel from 'react-bootstrap/lib/Panel';
 import Button from 'react-bootstrap/lib/Button';
@@ -14,7 +13,7 @@ export default function Product ({ product, discounts, addToBasket }) {
     const discount = discounts.find(discount => discount.productCode === product.code);
     return (
         <Col xs={ 12 } sm={ 4 }>
-            <Panel className={ classnames('product-panel', { discounted: !!discount }) }>
+            <Panel className='product-panel'>
                 <div className='product-content__wrapper'>
                     <h2 className='product-title'>{ product.name }</h2>
                     <h3 className='product-price'>£{ formatPrice(product.price) }</h3>

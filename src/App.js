@@ -35,7 +35,7 @@ class App extends Component {
                             { products.map(product =>
                                 <Product key={ product.code }
                                     product={ product }
-                                    discounts={ discounts }
+                                    discounts={ basket.discounts }
                                     addToBasket={ this.addProduct(product) } />)
                             }
                         </Row>

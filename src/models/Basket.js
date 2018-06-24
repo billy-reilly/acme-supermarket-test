@@ -70,8 +70,8 @@ export default class Basket extends record(defaults) {
     }
 
     isEmpty () {
-        const totalItems = this.productsAvailable.reduce((total, product) => {
-            return total + this.getQuantity(product.code);
+        const totalItems = this.productsAdded.reduce((total, quantity) => {
+            return total + quantity;
         }, 0);
         return totalItems < 1;
     }
