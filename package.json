@@ -18,7 +18,13 @@
   },
   "homepage": "https://github.com/ag-digital/acme-supermarket-test#readme",
   "dependencies": {
+    "bootstrap": "^3.3.7",
+    "classnames": "^2.2.6",
+    "immutable": "^3.8.2",
+    "lodash": "^4.17.10",
+    "prop-types": "^15.6.2",
     "react": "^16.4.1",
+    "react-bootstrap": "^0.32.1",
     "react-dom": "^16.4.1"
   },
   "devDependencies": {

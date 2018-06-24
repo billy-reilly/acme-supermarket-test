@@ -11,3 +11,99 @@
 .App-title {
   font-size: 1.5em;
 }
+
+.content-container {
+  max-width: 750px;
+}
+
+.product-panel {
+  position: relative;
+  max-width: 250px;
+  margin: 20px auto 0 auto;
+  padding-bottom: 34px;
+}
+
+@media (max-width: 768px) {
+  .product-panel {
+    margin-bottom: 0;
+  }
+}
+
+.product-content__wrapper {
+  padding: 30px;
+}
+
+.product-title {
+  font-size: 1.2em;
+  margin-top: 0;
+}
+
+.product-price {
+  font-size: 1.1em;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.add-product-button {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  border-radius: 3px;
+}
+
+.discount-description {
+  margin: 5px auto 0 auto;
+  max-width: 250px;
+  background-color: #ffd101;
+  border-radius: 3px;
+  padding: 5px;
+}
+
+.basket-panel {
+  margin-top: 20px;
+}
+
+.basket-title {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 1.2em;
+}
+
+.basket-item-name, .basket-item-price {
+  margin-bottom: 0;
+  font-size: 1.1em;
+  line-height: 34px;
+}
+
+.basket-item-discount {
+  margin-bottom: 0;
+  font-size: 1em;
+  line-height: 34px;
+  color: red;
+}
+
+.quantity-value {
+  margin: 0 10px;
+}
+
+.basket-total-summary {
+  width: 100%;
+}
+
+.basket-total-summary td:first-child {
+  text-align: left;
+}
+
+.basket-total-summary td:last-child {
+  text-align: right;
+}
+
+.basket-subtotal-row {
+  line-height: 24px;
+}
+
+.basket-total-row {
+  font-size: 1.2em;
+  line-height: 34px;
+}
