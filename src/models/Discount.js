@@ -4,7 +4,7 @@ export default class Discount {
     productCode = '';
     percentageDiscount = 0;
     calculateDiscountsPermitted = () => 0;
-    enabled = false;
+    enabled = true;
     description = '';
 
     constructor(params = {}) {

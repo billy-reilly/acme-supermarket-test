@@ -24,14 +24,12 @@ export const discounts = [
         productCode: 'FR1',
         percentageDiscount: 100,
         calculateDiscountsPermitted: quantity => Math.floor(quantity / 2),
-        enabled: true,
         description: 'Buy one get one free'
     }),
     new Discount({
         productCode: 'SR1',
         percentageDiscount: 10,
         calculateDiscountsPermitted: quantity => quantity >= 3 ? quantity : 0,
-        enabled: true,
         description: '10% off when you buy three or more'
     })
 ];

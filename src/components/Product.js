@@ -10,7 +10,7 @@ import ProductModel from '../models/Product';
 import Discount from '../models/Discount';
 
 export default function Product ({ product, discounts, addToBasket }) {
-    const discount = discounts.find(discount => discount.productCode === product.code);
+    const discount = discounts.find(discount => discount.productCode === product.code && discount.enabled);
     return (
         <Col xs={ 12 } sm={ 4 }>
             <Panel className='product-panel'>
