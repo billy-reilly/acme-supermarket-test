@@ -61,8 +61,8 @@ export default class Basket extends record(defaults) {
 
     getTotalPricePostDiscount () {
         const totalPreDiscount = this.getTotalPricePreDiscount(this.productsAvailable);
-        const totalPostDiscount = this.getTotalDiscount(this.productsAvailable, this.discounts);
-        return totalPreDiscount - totalPostDiscount;
+        const totalDiscount = this.getTotalDiscount(this.productsAvailable, this.discounts);
+        return totalPreDiscount - totalDiscount;
     }
 
     total () {
